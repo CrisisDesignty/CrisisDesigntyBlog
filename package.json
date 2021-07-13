@@ -1,0 +1,20 @@
+{
+  "name": "crisisdesigntyblog",
+  "version": "1.0.0",
+  "description": "This is a personal blog page with sass and html.",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "sass --watch ~/PersonalProjects/curso_maquetacion-css/CrisisDesigntyBlog/app/styles/sass/main.scss ~/PersonalProjects/curso_maquetacion-css/CrisisDesigntyBlog/app/styles/main.css",
+    "sass-convert": "sass ~/PersonalProjects/curso_maquetacion-css/CrisisDesigntyBlog/app/styles/sass/main.scss ~/PersonalProjects/curso_maquetacion-css/CrisisDesigntyBlog/app/styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrisisDesignty/CrisisDesigntyBlog.git"
+  },
+  "author": "CrisisDesignty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrisisDesignty/CrisisDesigntyBlog/issues"
+  },
+  "homepage": "https://github.com/CrisisDesignty/CrisisDesigntyBlog#readme"
+}
