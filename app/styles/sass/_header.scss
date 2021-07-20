@@ -51,6 +51,18 @@ a {
         font-size: 16pt;
         color: $color-main-light;
     }
+    &__profile--text {
+        display: flex;
+        margin: 4rem;
+        
+    h1 {
+        font-size: 28pt;
+        text-align: left;
+        color: $color-gray-light;
+        font-weight: 600;
+    } 
+
+    }
 }
 .logo {
     margin-top: 2rem;
