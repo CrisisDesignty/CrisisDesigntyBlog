@@ -30,7 +30,7 @@ a {
 }
 .header__icons--container {
   width: 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
   height: 50px;
   display: flex;
   justify-content: flex-end;
@@ -53,31 +53,53 @@ a {
 
 .nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 9rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 42rem;
+  background-image: url(/app/assets/img/astro-astro_web-02.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .nav__logo--container {
   margin-left: 5rem;
 }
 .nav__profile--link {
   display: flex;
-  align-items: center;
+  margin-top: 3.5rem;
   justify-content: flex-end;
   margin-right: 5rem;
+  text-decoration: underline;
+  font-size: 16pt;
+  color: #94e4b0;
 }
 
 .logo {
   margin-top: 2rem;
-  width: 4rem;
+  width: 12rem;
 }
 
-.nav__profile--link {
-  text-decoration: underline;
-  font-size: 16pt;
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 34rem;
+  justify-content: center;
+}
+.button__input {
+  border: none;
+  border-radius: 10px;
+  height: 4rem;
+  width: 12rem;
+  background: #67d68d;
+  font-size: 18pt;
+  font-weight: 600;
+  color: #202020;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.nav__profile--link a {
-  color: #94e4b0;
+.home {
+  width: 200px;
+  background: white;
 }
 
 /*# sourceMappingURL=main.css.map */
