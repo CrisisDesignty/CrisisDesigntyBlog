@@ -16,8 +16,9 @@ a {
         height: 50px;
         display: flex;
         justify-content: flex-end;
-        background: $color-main-light;
+        background: $color-main;
     } 
+    
 }
 .icons {
     width: 200px;
@@ -28,45 +29,64 @@ a {
     justify-content: space-between;
     margin-right: 2rem; 
 }
+.icons a:hover {
+    color: $color-secundary;
+    transform: scale(1.5);
+}
 .icons a {
     font-size: 22pt;
 }
 .nav {
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     height: 42rem;
     background-image: url(/app/assets/img/astro-astro_web-02.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    &__profile-container--link {
+        display: flex;
+        justify-content: flex-end;
+    }
     &__logo--container {
-        margin-left: 5rem;
+        margin-left: 2.4rem;
     }
     &__profile--link {
-        display: flex;
-        margin-top: 3.5rem;
-        justify-content: flex-end;
-        margin-right: 5rem;
-        text-decoration: underline;
+        padding: 2rem 4.5rem 0;
+        position: absolute;
         font-size: 16pt;
-        color: $color-main-light;
+        font-weight: 600;
+        text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+        text-underline-offset: 0.2rem;
+        color: $color-secundary-light;
+        white-space: nowrap; 
+        transition: text-decoration 0.3s;
+        transition: 0.3s; 
+    }
+    &__profile--link:hover {
+        text-decoration-color:  $color-secundary
+    }
+    &__profile--link:active {
+        transform: scale(1.31);
     }
     &__profile--text {
         display: flex;
         margin: 4rem;
         
     h1 {
+        padding: 3rem 0 0;
         font-size: 28pt;
         text-align: left;
         color: $color-gray-light;
         font-weight: 600;
     } 
 
-    }
+}
 }
 .logo {
     margin-top: 2rem;
-    width: 12rem;
+    width: 10rem;
 }
 .button {
     display: flex;
@@ -85,7 +105,17 @@ a {
         font-weight: 600;
         color: $color-dark;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: 0.2s; 
     }
-    
+
+    &__input:hover {
+        color: $color-secundary;
+        transform: scale(1.2);
+        background: $color-main-light;
+        box-shadow: rgba(0, 0, 0, 0.76) 0px 22px 70px 4px;
+    }
+    &__input:active {
+        transform: scale(1.5);
+    }
 }
     

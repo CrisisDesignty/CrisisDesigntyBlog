@@ -1,0 +1,22 @@
+.background__blog {
+    background: $color-gray-light;
+    height: 43rem;
+    background-position: center;
+    background-size: 100%;
+}
+.blog {
+    display: grid;
+    &__main {
+
+    }
+    &__blog-container {
+
+       &--content {
+
+       } 
+    }
+    &__button {
+
+    }
+    
+}

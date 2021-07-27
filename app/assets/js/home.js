@@ -1,5 +1,7 @@
-const button = document.getElementById('input')
+const blogs = document.getElementById('input');
 
-button.onclick = function () {
-    location.href = "http://127.0.0.1:5500/blogs.html"
+blogs.addEventListener('click', updateButton)
+
+function updateButton(){
+    window.location.href = "blogs.html"
 }
