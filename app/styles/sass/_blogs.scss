@@ -1,22 +1,79 @@
 .background__blog {
     background: $color-gray-light;
-    height: 43rem;
+    height: 120rem;
     background-position: center;
     background-size: 100%;
 }
 .blog {
     display: grid;
+    margin-top: 2rem;
+
     &__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+        padding: 0 2.6rem 1rem 2.6rem; 
+        div {
+            margin-top: 3rem;
+        }
+    }
+    &__main--top {
+        background-color: $color-main;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr;
+        padding: 0 12rem 1rem 2.6rem;
+    }
+    &__container--content {
+        grid-column: 1; 
+    }
+    &__container--content-text {
+        width: 22rem;
 
     }
-    &__blog-container {
+    &__container--content-text p {
+        text-align: justify;
+        color: $color-dark;
+        font-size: 12pt;
+    }
+    &__container--content-topimg {
+        width: 34rem;
+        transition: .2s;
+        &:hover {
 
-       &--content {
+            transform: scale(1.07);
+            border: 2px solid $color-secundary;
+        }
+    }
+    &__container--content-regimg {
 
-       } 
+        width: 22rem;
+        transition: .3s;
+        &:hover {
+            transform: scale(0.9);
+            border: 2px solid $color-main;
+        }
     }
     &__button {
+        background: $color-secundary;
+        border: none;
+        color: $color-gray-light;
+        padding: 0.8rem 2.2rem;
+        font-size: 14pt;
+        font-weight: 100;
+        overflow: hidden;
+        padding: 1rem 2rem;
+        position: relative;
+        text-decoration: none;
+        transition: .2s transform ease-in-out;
+        will-change: transform;
+        z-index: 0;
 
+        &:hover {
+        border: 2px solid transparent;
+        color: $color-main-light;
+        transform: scale(1.05);
+        will-change: transform;
+        }
     }
-    
 }
