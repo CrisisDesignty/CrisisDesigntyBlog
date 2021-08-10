@@ -1,0 +1,17 @@
+.blogpost {
+    &__img-container {
+        padding: 0 50px 40px;
+        border-top: 35px solid $color-main;
+        display: flex;
+        justify-content: center;
+        & img { 
+            width: 50%;
+        }
+    }
+    &__main-container {
+        padding: 0 50px 40px;
+        & div>h3 {
+            background: black;
+        }
+    }
+}
