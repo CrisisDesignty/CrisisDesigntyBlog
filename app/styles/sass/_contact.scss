@@ -1,0 +1,30 @@
+.contact {
+    display: grid;
+    margin-top: 2rem;
+
+    &__container {
+        justify-content: center;
+        background: $color-main;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 1rem 2.6rem 0 2.6rem; 
+
+        &--main {
+            padding: 0 0 1rem 5rem;
+
+            & h3 {
+                font-size: 18pt;
+            }
+        }
+
+        &--main-img {
+            width: 12rem;
+        }
+
+        &--text {
+            padding: 0  2rem 2rem;
+            text-align: justify;
+        }
+    }
+}

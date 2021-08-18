@@ -1,17 +1,28 @@
 .blogpost {
+    position: relative;
     &__img-container {
         padding: 0 50px 40px;
-        border-top: 35px solid $color-main;
         display: flex;
         justify-content: center;
         & img { 
-            width: 50%;
+            width: 70%;
         }
     }
-    &__main-container {
-        padding: 0 50px 40px;
-        & div>h3 {
-            background: black;
+    &__main--container {
+        padding: 0 12rem 4rem;
+        height: 80px; 
+        
+        & h1 {
+            font-size: 28pt;
+        }
+
+        & h3 {
+            border-bottom: 1px solid $color-dark;
+        }
+
+        &-text{
+            text-align: justify;
+            font-size: 14pt;
         }
     }
 }
